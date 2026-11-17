@@ -1,5 +1,8 @@
 # Vedadvaya Ayurveda Hair & Skin Clinic — Single-Page Website
 
+🌐 **Live Website:** [https://srkade.github.io/vedadvaya/](https://srkade.github.io/vedadvaya/)  
+📁 **GitHub Repository:** [https://github.com/srkade/vedadvaya](https://github.com/srkade/vedadvaya)
+
 Official single-page website for **Vedadvaya Ayurveda Hair & Skin Clinic**, customized based on the clinic's Instagram profile (`@vedadvaya_clinic`), medical practice by **Dr. Sujata D Pawar**, and verified patient therapies.
 
 ---
