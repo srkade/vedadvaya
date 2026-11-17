@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedadvaya Ayurveda Hair & Skin Clinic | Dr. Sujata D Pawar | Amravati & Karanja Lad</title>
+    <meta name="description" content="Official website for Vedadvaya Ayurveda Hair and Skin Clinic by Dr. Sujata D Pawar. Authentic Mukhlepa, Raktmokshan (Leech Therapy), Padabhyang, and hair regrowth in Amravati & Karanja Lad.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ayur: {
+                            forest: '#133524',
+                            deep: '#0B2317',
+                            emerald: '#1E5336',
+                            leaf: '#3A7D53',
+                            lightleaf: '#EBF4EE',
+                            gold: '#D4AF37',
+                            richgold: '#B88E1E',
+                            cream: '#FAF7F0',
+                            sand: '#F4ECE1',
+                            terracotta: '#9A4B2D',
+                            charcoal: '#212922'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        rozha: ['"Rozha One"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth Ayurvedic Animations */
+        @keyframes oilDrip {
+            0% { transform: translateY(0) scaleY(1); opacity: 0.9; }
+            60% { transform: translateY(65px) scaleY(1.4); opacity: 1; }
+            85% { transform: translateY(95px) scaleY(0.7); opacity: 0.8; }
+            100% { transform: translateY(115px) scale(0); opacity: 0; }
+        }
+
+        @keyframes ripple {
+            0% { transform: scale(0.2); opacity: 1; }
+            100% { transform: scale(2.4); opacity: 0; }
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.25); }
+            50% { box-shadow: 0 0 30px rgba(212, 175, 55, 0.5); }
+        }
+
+        .animate-oil-drip {
+            animation: oilDrip 2.6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+        }
+
+        .animate-ripple {
+            animation: ripple 2.6s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        }
+
+        .animate-float-slow {
+            animation: floatSlow 6s ease-in-out infinite;
+        }
+
+        .glow-gold {
+            animation: pulseGlow 3s infinite;
+        }
+
+        /* Clean scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FAF7F0; }
+        ::-webkit-scrollbar-thumb { background: #1E5336; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #B88E1E; }
+    </style>
+</head>
+<body class="bg-ayur-cream text-ayur-charcoal font-sans antialiased selection:bg-ayur-gold selection:text-ayur-deep">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-ayur-deep text-ayur-sand text-xs md:text-sm py-2 px-4 border-b border-ayur-gold/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Two Clinic Centers: <strong>Amravati</strong> & <strong>Karanja (Lad)</strong></span>
+                <span class="hidden md:inline text-ayur-gold/60">•</span>
+                <span class="hidden md:inline text-ayur-sand/80">Dr. Sujata D Pawar (Skin & Hair Consultant)</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:8263884453" class="hover:text-ayur-gold transition-colors flex items-center gap-1">
+                    <svg class="w-3.5 h-3.5 text-ayur-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>Amravati: 8263884453</span>
+                </a>
+                <span class="text-ayur-gold/40">|</span>
+                <a href="tel:9158676913" class="hover:text-ayur-gold transition-colors flex items-center gap-1">
+                    <svg class="w-3.5 h-3.5 text-ayur-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>Karanja: 9158676913</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header with Actual Logo -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-ayur-leaf/10 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="h-14 w-14 rounded-2xl bg-white p-1 border border-ayur-leaf/20 shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <img src="logo.png" alt="Vedadvaya Clinic Official Logo" class="h-full w-full object-contain">
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="font-cinzel text-xl md:text-2xl font-bold tracking-wider text-ayur-forest">VEDADVAY<span class="text-ayur-richgold">A</span></span>
+                    </div>
+                    <p class="text-[10px] uppercase tracking-widest text-ayur-terracotta font-semibold">Care For Every Layer • Hair & Skin Clinic</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-ayur-charcoal">
+                <a href="#philosophy" class="hover:text-ayur-emerald transition-colors">Philosophy & Doctor</a>
+                <a href="#treatments" class="hover:text-ayur-emerald transition-colors">Treatments</a>
+                <a href="#clinical-showcase" class="hover:text-ayur-emerald transition-colors">Cases & Results</a>
+                <a href="#dosha-quiz" class="hover:text-ayur-emerald transition-colors flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-ayur-richgold"></span>
+                    Dosha Diagnostic
+                </a>
+                <a href="#locations" class="hover:text-ayur-emerald transition-colors">Clinics & Timings</a>
+            </nav>
+
+            <!-- CTA Actions -->
+            <div class="flex items-center gap-3">
+                <a href="#appointment" class="bg-gradient-to-r from-ayur-emerald to-ayur-forest text-white px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide shadow-md hover:shadow-lg hover:from-ayur-forest hover:to-ayur-deep transition-all transform hover:-translate-y-0.5">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section with Shirodhara Animation -->
+    <section class="relative min-h-[85vh] bg-gradient-to-b from-ayur-cream via-white to-ayur-lightleaf/40 pt-8 pb-16 overflow-hidden flex items-center">
+        <!-- Floating Botanical Leaves (Background decoration) -->
+        <div class="absolute top-10 left-8 text-ayur-emerald/15 pointer-events-none animate-float-slow">
+            <svg class="w-24 h-24" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 10 C30 30, 20 60, 50 90 C80 60, 70 30, 50 10 Z"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Headline & Value Proposition -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-ayur-lightleaf border border-ayur-leaf/30 text-ayur-emerald text-xs font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-ayur-richgold"></span>
+                        Classical Ayurveda • Dr. Sujata D Pawar
+                    </div>
+
+                    <h1 class="font-cinzel text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ayur-deep leading-[1.15]">
+                        Care For <span class="text-ayur-emerald italic font-rozha">Every Layer.</span>
+                        <br class="hidden sm:inline">
+                        <span class="text-ayur-richgold text-2xl sm:text-3xl md:text-4xl block mt-2 font-normal font-sans">
+                            Ayurvedic Hair & Skin Healing
+                        </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Specialized medical consultations for persistent hair fall, active cystic acne, melasma pigmentation, and scalp disorders. We heal internal Doshas and purify the micro-layers of skin and hair roots with classical therapies.
+                    </p>
+
+                    <!-- Trust Stats -->
+                    <div class="grid grid-cols-3 gap-3 pt-2 max-w-lg mx-auto lg:mx-0">
+                        <div class="bg-white/80 backdrop-blur p-3 rounded-xl border border-ayur-leaf/20 shadow-sm text-center">
+                            <span class="block text-xl md:text-2xl font-bold text-ayur-emerald font-cinzel">100%</span>
+                            <span class="text-[11px] text-gray-600 uppercase tracking-wider">Classical Herbs</span>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur p-3 rounded-xl border border-ayur-leaf/20 shadow-sm text-center">
+                            <span class="block text-xl md:text-2xl font-bold text-ayur-richgold font-cinzel">2</span>
+                            <span class="text-[11px] text-gray-600 uppercase tracking-wider">Clinic Centers</span>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur p-3 rounded-xl border border-ayur-leaf/20 shadow-sm text-center">
+                            <span class="block text-xl md:text-2xl font-bold text-ayur-terracotta font-cinzel">7</span>
+                            <span class="text-[11px] text-gray-600 uppercase tracking-wider">Skin Dhatus Healed</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#appointment" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-ayur-forest to-ayur-emerald text-white font-semibold text-sm shadow-xl hover:shadow-2xl hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                            <span>Schedule Consultation</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                        <a href="https://wa.me/918263884453?text=Namaste%20Dr.%20Sujata,%20I%20would%20like%20to%20consult%20at%20Vedadvaya%20Clinic%20for%20Hair/Skin." target="_blank" class="w-full sm:w-auto px-6 py-4 rounded-full bg-emerald-600 text-white font-medium text-sm shadow-md hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.761.819 2.796.82h.005c3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.767-5.773-5.767zm7.329 5.766c-.001 4.04-3.288 7.327-7.33 7.327-1.229 0-2.433-.314-3.493-.911l-3.87 1.014 1.033-3.774c-.658-1.104-1.002-2.37-1.002-3.656.002-4.04 3.289-7.327 7.332-7.327 4.041.001 7.33 3.287 7.33 7.327z"/></svg>
+                            <span>WhatsApp Dr. Sujata</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Shirodhara Animation Box -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-md bg-gradient-to-b from-ayur-deep via-ayur-forest to-ayur-deep rounded-3xl p-8 shadow-2xl border-2 border-ayur-gold/30 text-white overflow-hidden glow-gold">
+                        <div class="text-center relative z-10">
+                            <span class="text-xs uppercase tracking-widest text-ayur-gold font-semibold">Classical Bio-Therapy</span>
+                            <h3 class="font-cinzel text-xl font-bold mt-1 text-white">Nourishing From The Roots</h3>
+                            <p class="text-xs text-ayur-sand/80 mt-1">Shirodhara & Medicated Oil Stream</p>
+                        </div>
+
+                        <!-- Shirodhara Apparatus Simulation -->
+                        <div class="relative h-64 flex flex-col items-center justify-between my-4">
+                            <!-- Brass Vessel -->
+                            <div class="relative z-20 flex flex-col items-center">
+                                <div class="w-32 h-14 bg-gradient-to-r from-amber-600 via-yellow-400 to-amber-700 rounded-b-full shadow-lg border-t-2 border-amber-300 relative flex items-center justify-center">
+                                    <div class="w-24 h-2 bg-amber-900/40 rounded-full mb-1"></div>
+                                    <div class="absolute -bottom-2 w-3 h-3 bg-amber-500 rounded-b-sm"></div>
+                                </div>
+                                <div class="w-24 h-0.5 bg-amber-300/40"></div>
+                            </div>
+
+                            <!-- Animated Golden Drop -->
+                            <div class="absolute top-14 flex flex-col items-center pointer-events-none">
+                                <div class="w-2.5 h-4 bg-gradient-to-b from-yellow-200 to-amber-400 rounded-full animate-oil-drip shadow-[0_0_8px_#FCD34D]"></div>
+                            </div>
+
+                            <!-- Scalp Ripple Reservoir -->
+                            <div class="relative z-10 w-full flex flex-col items-center pt-8">
+                                <div class="relative w-44 h-20 flex items-center justify-center">
+                                    <div class="absolute w-28 h-10 border-2 border-yellow-400/60 rounded-[50%] animate-ripple"></div>
+                                    <div class="absolute w-20 h-7 border border-amber-300/40 rounded-[50%] animate-ripple" style="animation-delay: 1.3s;"></div>
+                                    
+                                    <div class="w-36 h-12 bg-gradient-to-t from-ayur-forest to-emerald-800 rounded-t-full border border-ayur-gold/40 flex items-center justify-center">
+                                        <span class="text-[10px] text-ayur-gold font-serif tracking-wider uppercase">Active Doshic Balance</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Badge -->
+                        <div class="bg-black/30 backdrop-blur rounded-xl p-3 border border-white/10 text-xs text-center text-ayur-sand/90">
+                            <span class="text-ayur-gold font-semibold">Official Clinical Practice:</span>
+                            <span class="text-gray-300 block text-[11px] mt-0.5">Amravati (Rukhmini Nagar) & Karanja Lad (Balaji Heights)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Integrated Philosophy & Doctor Spotlight (No Duplication) -->
+    <section id="philosophy" class="py-20 bg-white border-t border-ayur-leaf/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-ayur-cream rounded-3xl border border-ayur-leaf/20 shadow-xl overflow-hidden p-8 sm:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Doctor Info Column -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-block px-3 py-1 rounded-full bg-ayur-emerald/10 text-ayur-forest text-xs font-semibold tracking-wider uppercase">
+                            Consulting Ayurvedic Physician
+                        </div>
+                        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-ayur-deep">
+                            Dr. Sujata D Pawar
+                        </h2>
+                        <p class="text-ayur-richgold font-medium text-sm tracking-wide">
+                            B.A.M.S. • Skin & Hair Consultant • Classical Panchakarma Specialist
+                        </p>
+
+                        <div class="w-16 h-1 bg-ayur-gold rounded-full"></div>
+
+                        <blockquote class="text-gray-700 italic border-l-4 border-ayur-gold pl-4 text-sm sm:text-base leading-relaxed bg-white/70 py-3 rounded-r-lg">
+                            “Healthy hair and radiant skin are not achieved by masking flaws with synthetic chemicals. They are the natural mirror of balanced Doshas, pure blood circulation, and cellular tranquility. At Vedadvaya, we heal every layer from within.”
+                        </blockquote>
+
+                        <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                            Under Dr. Sujata's direction, our clinical dispensary compounds fresh herbal <em>churnas</em>, medicated <em>tailas</em>, and manages sterile <em>Jalauka</em> (medicinal leech) protocols following classical <em>Sushruta Samhita</em> standards for Amravati and Karanja patients.
+                        </p>
+
+                        <!-- The 4 Ayurvedic Skin Layers in Brief -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-center">
+                            <div class="bg-white p-3 rounded-xl border border-ayur-leaf/15">
+                                <span class="font-cinzel font-bold text-ayur-forest text-sm block">Avabhasini</span>
+                                <span class="text-[10px] text-gray-500">Outer Glow Layer</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-xl border border-ayur-leaf/15">
+                                <span class="font-cinzel font-bold text-ayur-forest text-sm block">Lohita</span>
+                                <span class="text-[10px] text-gray-500">Acne Micro-Capillaries</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-xl border border-ayur-leaf/15">
+                                <span class="font-cinzel font-bold text-ayur-forest text-sm block">Tamra</span>
+                                <span class="text-[10px] text-gray-500">Hair Follicle Anchor</span>
+                            </div>
+                            <div class="bg-white p-3 rounded-xl border border-ayur-leaf/15">
+                                <span class="font-cinzel font-bold text-ayur-forest text-sm block">Mamsadhara</span>
+                                <span class="text-[10px] text-gray-500">Deep Base Tissue</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Emblem Card -->
+                    <div class="lg:col-span-5 bg-gradient-to-br from-ayur-forest to-ayur-deep text-white rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-lg border border-ayur-gold/30">
+                        <div class="h-28 w-28 rounded-3xl bg-white p-3 mb-6 shadow-md flex items-center justify-center">
+                            <img src="logo.png" alt="Vedadvaya Official Emblem" class="h-full w-full object-contain">
+                        </div>
+                        <span class="text-ayur-gold font-cinzel text-xl font-bold tracking-wider">VEDADVAYA</span>
+                        <span class="text-[11px] text-ayur-sand/70 uppercase tracking-widest mt-1">Care For Every Layer</span>
+                        
+                        <div class="w-full my-6 border-t border-white/10"></div>
+
+                        <div class="text-xs text-ayur-sand/90 space-y-2">
+                            <p>🌿 <strong>In-Clinic Pharmacy:</strong> Cold-pressed oils & custom churnas</p>
+                            <p>🩸 <strong>Sterile Leech Facility:</strong> Natural bio-purification</p>
+                            <p>📍 <strong>Dual OPDs:</strong> Amravati & Karanja (Lad)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Unified Clinical Treatments (Interactive Tabs: Skin, Hair, Home Remedies) -->
+    <section id="treatments" class="py-20 bg-ayur-lightleaf/20 border-t border-ayur-leaf/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs uppercase font-bold tracking-widest text-ayur-emerald">Personalized Treatments</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-ayur-deep mt-2">
+                    Ayurvedic Treatment Suite
+                </h2>
+                <div class="w-16 h-1 bg-ayur-gold mx-auto my-3 rounded-full"></div>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Explore our specialized clinical therapies for skin disorders, hair rejuvenation, and daily wellness rituals.
+                </p>
+
+                <!-- Treatment Tab Selector -->
+                <div class="inline-flex p-1.5 rounded-full bg-white border border-ayur-leaf/20 shadow-sm mt-6">
+                    <button type="button" onclick="switchTab('skin')" id="tab-btn-skin" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-ayur-forest text-white shadow">
+                        Skin Care (Twak)
+                    </button>
+                    <button type="button" onclick="switchTab('hair')" id="tab-btn-hair" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all text-gray-600 hover:text-ayur-forest">
+                        Hair Care (Keshya)
+                    </button>
+                    <button type="button" onclick="switchTab('wellness')" id="tab-btn-wellness" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all text-gray-600 hover:text-ayur-forest">
+                        Wellness & Remedies
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content: Skin Care -->
+            <div id="tab-content-skin" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1: Mukhlepa -->
+                <div class="bg-white rounded-2xl p-7 border border-ayur-leaf/20 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-[11px] font-bold text-ayur-terracotta uppercase tracking-wider">Pigmentation & Melasma</span>
+                        <h3 class="font-cinzel text-xl font-bold text-ayur-forest mt-1">Mukhlepa Facial Polishing</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
+                            Freshly compounded Ayurvedic herbal paste applied to treat stubborn dark spots, tanning, and uneven tone. Cleanses deep pores without synthetic bleach or harsh chemicals.
+                        </p>
+                        <ul class="text-xs text-gray-600 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Fades stubborn melasma & blemishes</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Brightens dull complexion naturally</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Evens sun damage without peeling</li>
+                        </ul>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs text-ayur-emerald font-semibold">Fresh Herbal Preparation</span>
+                        <a href="#appointment" class="text-xs text-ayur-richgold font-bold hover:underline">Book Session →</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Leech Therapy for Acne -->
+                <div class="bg-white rounded-2xl p-7 border border-ayur-leaf/20 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-[11px] font-bold text-red-600 uppercase tracking-wider">Classical Jalaukavacharana</span>
+                        <h3 class="font-cinzel text-xl font-bold text-ayur-forest mt-1">Raktmokshan for Cystic Acne</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
+                            Painless bio-purification using laboratory-reared medicinal leeches. Drains toxic impure blood (*Ama*) trapped in micro-vessels to arrest severe, recurring hormonal acne.
+                        </p>
+                        <ul class="text-xs text-gray-600 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Rapidly deflates painful, inflamed pustules</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Virtually painless with natural local enzymes</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Prevents permanent acne scarring</li>
+                        </ul>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs text-red-700 font-semibold">100% Sterile Protocol</span>
+                        <a href="#appointment" class="text-xs text-ayur-richgold font-bold hover:underline">Book Session →</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Chronic Skin Care (Kushtha) -->
+                <div class="bg-white rounded-2xl p-7 border border-ayur-leaf/20 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-[11px] font-bold text-ayur-forest uppercase tracking-wider">Deep Doshic Purge</span>
+                        <h3 class="font-cinzel text-xl font-bold text-ayur-forest mt-1">Kushtha Care (Psoriasis & Eczema)</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
+                            Integrative herbal therapy targeting allergic eruptions, itchy scaly plaques, and chronic dermatitis through internal blood-cleansing *kwaths* and soothing herbal washes.
+                        </p>
+                        <ul class="text-xs text-gray-600 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Calms relentless burning & itching</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Non-steroidal skin barrier restoration</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Personalized dietary & allergy protocol</li>
+                        </ul>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs text-ayur-emerald font-semibold">Holistic Management</span>
+                        <a href="#appointment" class="text-xs text-ayur-richgold font-bold hover:underline">Book Session →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Hair Care (Initially Hidden) -->
+            <div id="tab-content-hair" class="hidden grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Hair Card 1: Raktmokshan for Regrowth -->
+                <div class="bg-white rounded-2xl p-7 border border-ayur-leaf/20 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-[11px] font-bold text-red-600 uppercase tracking-wider">Follicle Awakening</span>
+                        <h3 class="font-cinzel text-xl font-bold text-ayur-forest mt-1">Raktmokshan for Hair Regrowth</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
+                            Relieves congested micro-channels (*Srotas*) supplying oxygen and nutrients to sleeping scalp roots. Highly effective for acute shedding and patchy Alopecia Areata.
+                        </p>
+                        <ul class="text-xs text-gray-600 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Halts sudden and heavy hair shedding</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Reawakens dormant scalp follicles</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Natural alternative to synthetic minoxidil</li>
+                        </ul>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs text-ayur-forest font-semibold">In-Clinic Procedure</span>
+                        <a href="#appointment" class="text-xs text-ayur-richgold font-bold hover:underline">Consult Now →</a>
+                    </div>
+                </div>
+
+                <!-- Hair Card 2: Scalp Detox & Dandruff -->
+                <div class="bg-white rounded-2xl p-7 border border-ayur-leaf/20 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-[11px] font-bold text-ayur-richgold uppercase tracking-wider">Fungal & Sebum Balance</span>
+                        <h3 class="font-cinzel text-xl font-bold text-ayur-forest mt-1">Scalp Detox & Anti-Dandruff</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
+                            Warm medicated decoctions (*Kashayams*) infused with Neem, Triphala, and Bhringraj that cleanse deep follicular pores, eliminate stubborn flakes, and relieve scalp itch.
+                        </p>
+                        <ul class="text-xs text-gray-600 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Eradicates persistent flaky dandruff</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Restores healthy scalp oil balance</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Calms scalp heat and inflammation</li>
+                        </ul>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs text-ayur-forest font-semibold">Scalp Shiro-Abhyanga</span>
+                        <a href="#appointment" class="text-xs text-ayur-richgold font-bold hover:underline">Consult Now →</a>
+                    </div>
+                </div>
+
+                <!-- Hair Card 3: Premature Greying & Thinning -->
+                <div class="bg-white rounded-2xl p-7 border border-ayur-leaf/20 shadow-md hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-[11px] font-bold text-ayur-terracotta uppercase tracking-wider">Root Nourishment</span>
+                        <h3 class="font-cinzel text-xl font-bold text-ayur-forest mt-1">Greying & Thinning Reversal</h3>
+                        <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
+                            Hair is the byproduct (*Upadhatu*) of bone marrow (*Asthi Dhatu*). Through medicated *Nasya* drops and *Rasayana* nutrition, we strengthen natural melanin synthesis.
+                        </p>
+                        <ul class="text-xs text-gray-600 space-y-1.5 mt-4">
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Delays premature silvering & greying</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Thickens thin, brittle hair strands</li>
+                            <li class="flex items-center gap-2"><span class="text-ayur-emerald font-bold">✓</span> Enhances natural hair density and shine</li>
+                        </ul>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-xs text-ayur-forest font-semibold">Internal Medicine Protocol</span>
+                        <a href="#appointment" class="text-xs text-ayur-richgold font-bold hover:underline">Consult Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Wellness & Home Remedies (Initially Hidden) -->
+            <div id="tab-content-wellness" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Remedy 1: Padabhyang -->
+                <div class="bg-white rounded-2xl p-7 border border-ayur-leaf/20 shadow-md hover:shadow-xl transition-all">
+                    <span class="text-[11px] font-bold text-ayur-emerald uppercase tracking-wider">Nightly Ritual</span>
+                    <h3 class="font-cinzel text-xl font-bold text-ayur-forest mt-1">Padabhyang with Warm Sesame Oil</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
+                        In Ayurveda, reflex marma points on the soles directly influence the eyes (*Netra*) and nervous system (*Siras*). Massaging your feet nightly with 4–5 drops of warm sesame oil soothes digital eye strain, calms anxiety, and induces sound sleep.
+                    </p>
+                    <div class="mt-4 p-3 rounded-xl bg-ayur-cream text-xs text-ayur-forest font-medium">
+                        <strong>Daily Practice:</strong> Massage feet in gentle circular motions for 5–10 minutes right before bedtime.
+                    </div>
+                </div>
+
+                <!-- Remedy 2: Warm Salt Soak -->
+                <div class="bg-white rounded-2xl p-7 border border-ayur-leaf/20 shadow-md hover:shadow-xl transition-all">
+                    <span class="text-[11px] font-bold text-amber-700 uppercase tracking-wider">Nocturnal Relief</span>
+                    <h3 class="font-cinzel text-xl font-bold text-ayur-forest mt-1">Warm Rock-Salt Foot Bath</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed">
+                        Bedtime leg pain is often triggered by poor venous return, muscle fatigue, and aggravated Vata. Dipping your legs into a bucket of comfortably warm water with 2 tablespoons of rock salt (*Saindhava Lavana*) eases muscle spasms and restores circulation.
+                    </p>
+                    <div class="mt-4 p-3 rounded-xl bg-amber-50 text-xs text-amber-900 font-medium">
+                        <strong>Daily Practice:</strong> Soak legs up to mid-calf for 10–15 minutes every night for pain-free mornings.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. Real Instagram Visual Showcase & Clinical Proof -->
+    <section id="clinical-showcase" class="py-20 bg-white border-t border-ayur-leaf/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-ayur-cream via-white to-ayur-lightleaf/30 rounded-3xl p-6 sm:p-10 border border-ayur-leaf/20 shadow-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <!-- Real Instagram Posts Image -->
+                    <div class="lg:col-span-7 flex justify-center">
+                        <div class="relative rounded-2xl overflow-hidden border-2 border-ayur-leaf/20 shadow-2xl group max-w-lg">
+                            <img src="instagram_posts.jpg" alt="Vedadvaya Clinic Instagram Posts and Doctor Visiting Card" class="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent p-4 text-white">
+                                <p class="text-xs font-semibold flex items-center gap-1.5 text-ayur-gold">
+                                    <svg class="w-4 h-4 fill-current text-pink-400" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                                    Live Cases From @vedadvaya_clinic
+                                </p>
+                                <p class="text-[11px] text-gray-200 mt-0.5">Mukhlepa applications, leech bloodletting, and visiting card photographed at Amravati & Karanja Lad clinics.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Verification & Follow -->
+                    <div class="lg:col-span-5 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ayur-emerald/10 text-ayur-forest text-xs font-bold">
+                            <span>🌿 Transparent Clinical Evidence</span>
+                        </div>
+
+                        <h3 class="font-cinzel text-2xl sm:text-3xl font-bold text-ayur-deep">
+                            Real Patients. Authentic Results.
+                        </h3>
+
+                        <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                            No models or artificial enhancements. We document true Ayurvedic applications inside Dr. Sujata Pawar's consultation cabins—helping patients across Maharashtra recover natural hair growth and clear skin safely.
+                        </p>
+
+                        <div class="pt-2">
+                            <a href="https://www.instagram.com/vedadvaya_clinic?psln=MWRsNTZ2aGNmdzhkYg==" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-purple-700 via-pink-600 to-amber-500 text-white text-xs sm:text-sm font-bold shadow-md hover:brightness-110 transition-all">
+                                <span>Follow @vedadvaya_clinic on Instagram</span>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Interactive Dosha Diagnostic Tool -->
+    <section id="dosha-quiz" class="py-20 bg-ayur-cream border-t border-ayur-leaf/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-ayur-deep via-ayur-forest to-ayur-deep text-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-ayur-gold/30">
+                <div class="text-center max-w-xl mx-auto mb-8">
+                    <span class="text-xs uppercase tracking-widest text-ayur-gold font-bold">Interactive Tool</span>
+                    <h2 class="font-cinzel text-2xl sm:text-3xl font-bold mt-1">Discover Your Skin & Hair Dosha Profile</h2>
+                    <p class="text-xs sm:text-sm text-ayur-sand/80 mt-2">
+                        Select your symptoms to find your dominant Doshic imbalance and see Dr. Sujata’s recommended clinic protocol.
+                    </p>
+                </div>
+
+                <!-- Form -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="text-sm font-semibold text-ayur-gold block mb-2">1. What is your primary health concern?</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button type="button" onclick="selectQuiz(1, 'hair')" class="quiz-btn-1 p-3.5 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-medium text-left transition-all flex items-center justify-between" id="q1-hair">
+                                <span>Hair Fall & Thinning</span>
+                                <span class="indicator text-ayur-gold hidden">✓</span>
+                            </button>
+                            <button type="button" onclick="selectQuiz(1, 'acne')" class="quiz-btn-1 p-3.5 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-medium text-left transition-all flex items-center justify-between" id="q1-acne">
+                                <span>Active Acne & Boils</span>
+                                <span class="indicator text-ayur-gold hidden">✓</span>
+                            </button>
+                            <button type="button" onclick="selectQuiz(1, 'pigment')" class="quiz-btn-1 p-3.5 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-medium text-left transition-all flex items-center justify-between" id="q1-pigment">
+                                <span>Pigmentation & Dullness</span>
+                                <span class="indicator text-ayur-gold hidden">✓</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-sm font-semibold text-ayur-gold block mb-2">2. How does your skin and scalp feel?</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button type="button" onclick="selectQuiz(2, 'vata')" class="quiz-btn-2 p-3.5 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-medium text-left transition-all flex items-center justify-between" id="q2-vata">
+                                <span>Dry, Flaky & Rough (Vata)</span>
+                                <span class="indicator text-ayur-gold hidden">✓</span>
+                            </button>
+                            <button type="button" onclick="selectQuiz(2, 'pitta')" class="quiz-btn-2 p-3.5 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-medium text-left transition-all flex items-center justify-between" id="q2-pitta">
+                                <span>Hot, Red & Sensitive (Pitta)</span>
+                                <span class="indicator text-ayur-gold hidden">✓</span>
+                            </button>
+                            <button type="button" onclick="selectQuiz(2, 'kapha')" class="quiz-btn-2 p-3.5 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-medium text-left transition-all flex items-center justify-between" id="q2-kapha">
+                                <span>Oily, Clogged & Heavy (Kapha)</span>
+                                <span class="indicator text-ayur-gold hidden">✓</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Result Box -->
+                    <div id="quiz-result" class="hidden mt-6 p-6 rounded-2xl bg-white text-ayur-charcoal border-2 border-ayur-gold shadow-xl">
+                        <div class="flex items-center gap-2 text-ayur-emerald font-bold text-xs uppercase tracking-wider">
+                            <span class="w-2 h-2 rounded-full bg-ayur-emerald"></span>
+                            Personalized Vedadvaya Recommendation
+                        </div>
+                        <h3 id="result-title" class="font-cinzel text-xl font-bold text-ayur-deep mt-2"></h3>
+                        <p id="result-desc" class="text-xs sm:text-sm text-gray-600 mt-2 leading-relaxed"></p>
+                        
+                        <div class="mt-4 pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+                            <div class="text-xs text-gray-500">
+                                🌿 Recommended Clinic Therapy: <strong id="result-therapy" class="text-ayur-forest"></strong>
+                            </div>
+                            <a id="result-wa-btn" href="#appointment" class="px-5 py-2.5 rounded-full bg-ayur-emerald text-white text-xs font-bold hover:bg-ayur-forest transition-all">
+                                Book This Therapy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Clinic Locations (Amravati & Karanja Lad) -->
+    <section id="locations" class="py-20 bg-white border-t border-ayur-leaf/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase font-bold tracking-widest text-ayur-terracotta">Dual Clinic Centers</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-ayur-deep mt-2">
+                    Visit Vedadvaya Clinic
+                </h2>
+                <div class="w-16 h-1 bg-ayur-gold mx-auto my-3 rounded-full"></div>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Equipped with complete consultation cabins and traditional Panchakarma facilities.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Amravati -->
+                <div class="bg-ayur-cream rounded-3xl p-8 border-2 border-ayur-leaf/20 hover:border-ayur-emerald shadow-lg hover:shadow-xl transition-all">
+                    <span class="inline-block px-3 py-1 rounded-full bg-ayur-lightleaf text-ayur-emerald text-xs font-bold uppercase tracking-wider mb-4">
+                        Main Center • Amravati
+                    </span>
+                    <h3 class="font-cinzel text-2xl font-bold text-ayur-forest">Amravati Clinic</h3>
+                    
+                    <div class="mt-4 space-y-4 text-xs sm:text-sm text-gray-700">
+                        <div class="flex items-start gap-3">
+                            <span class="text-ayur-richgold text-base mt-0.5">📍</span>
+                            <div>
+                                <strong class="text-ayur-deep">Location:</strong>
+                                <p class="text-gray-600 mt-0.5">Rukhmini Nagar Chowk, in front of Jawalkar Diagnostic (near Naike Xerox), Amravati, Maharashtra.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-ayur-richgold text-base">📞</span>
+                            <div>
+                                <strong class="text-ayur-deep">Phone:</strong>
+                                <a href="tel:8263884453" class="text-ayur-emerald font-bold hover:underline block text-base">+91 82638 84453</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-ayur-richgold text-base">🕒</span>
+                            <div>
+                                <strong class="text-ayur-deep">Timings:</strong>
+                                <p class="text-gray-600">Daily Morning & Evening OPD (Call to book daily slot)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-gray-200/60 flex items-center justify-between">
+                        <a href="tel:8263884453" class="px-5 py-2.5 rounded-full bg-ayur-forest text-white text-xs font-semibold hover:bg-ayur-deep transition-all shadow">
+                            Call Amravati
+                        </a>
+                        <a href="https://wa.me/918263884453?text=Namaste%20Dr.%20Sujata,%20I%20want%20to%20book%20appointment%20at%20Amravati%20Clinic." target="_blank" class="px-5 py-2.5 rounded-full bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition-all flex items-center gap-1.5">
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Karanja (Lad) -->
+                <div class="bg-ayur-cream rounded-3xl p-8 border-2 border-ayur-leaf/20 hover:border-ayur-richgold shadow-lg hover:shadow-xl transition-all">
+                    <span class="inline-block px-3 py-1 rounded-full bg-amber-50 text-ayur-richgold text-xs font-bold uppercase tracking-wider mb-4">
+                        Branch Center • Karanja (Lad)
+                    </span>
+                    <h3 class="font-cinzel text-2xl font-bold text-ayur-forest">Karanja (Lad) Clinic</h3>
+                    
+                    <div class="mt-4 space-y-4 text-xs sm:text-sm text-gray-700">
+                        <div class="flex items-start gap-3">
+                            <span class="text-ayur-richgold text-base mt-0.5">📍</span>
+                            <div>
+                                <strong class="text-ayur-deep">Location:</strong>
+                                <p class="text-gray-600 mt-0.5">Balaji Heights, 1st Floor, Karanja (Lad), Washim District, Maharashtra.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-ayur-richgold text-base">📞</span>
+                            <div>
+                                <strong class="text-ayur-deep">Phone:</strong>
+                                <a href="tel:9158676913" class="text-ayur-emerald font-bold hover:underline block text-base">+91 91586 76913</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-ayur-richgold text-base">🕒</span>
+                            <div>
+                                <strong class="text-ayur-deep">Timings:</strong>
+                                <p class="text-gray-600">Weekly Scheduled OPD (Call ahead for Dr. Sujata's dates)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-gray-200/60 flex items-center justify-between">
+                        <a href="tel:9158676913" class="px-5 py-2.5 rounded-full bg-ayur-forest text-white text-xs font-semibold hover:bg-ayur-deep transition-all shadow">
+                            Call Karanja
+                        </a>
+                        <a href="https://wa.me/919158676913?text=Namaste%20Dr.%20Sujata,%20I%20want%20to%20book%20appointment%20at%20Karanja%20Clinic." target="_blank" class="px-5 py-2.5 rounded-full bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition-all flex items-center gap-1.5">
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Appointment Booking Form -->
+    <section id="appointment" class="py-20 bg-ayur-cream border-t border-ayur-leaf/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 border border-ayur-leaf/20 shadow-xl">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="text-xs uppercase font-bold tracking-widest text-ayur-emerald">Direct Booking</span>
+                    <h2 class="font-cinzel text-3xl font-bold text-ayur-deep mt-1">Book Your Appointment</h2>
+                    <p class="text-xs sm:text-sm text-gray-600 mt-2">
+                        Fill in your details to immediately route your consultation request to Dr. Sujata Pawar's desk.
+                    </p>
+                </div>
+
+                <form id="booking-form" onsubmit="handleBooking(event)" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-ayur-forest uppercase mb-1.5">Full Name *</label>
+                            <input type="text" id="patient-name" required placeholder="Enter your full name" class="w-full px-4 py-3 rounded-xl bg-ayur-cream border border-ayur-leaf/30 text-sm focus:outline-none focus:ring-2 focus:ring-ayur-emerald">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-ayur-forest uppercase mb-1.5">Phone / WhatsApp Number *</label>
+                            <input type="tel" id="patient-phone" required placeholder="e.g. 9876543210" class="w-full px-4 py-3 rounded-xl bg-ayur-cream border border-ayur-leaf/30 text-sm focus:outline-none focus:ring-2 focus:ring-ayur-emerald">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-ayur-forest uppercase mb-1.5">Preferred Clinic *</label>
+                            <select id="clinic-branch" class="w-full px-4 py-3 rounded-xl bg-ayur-cream border border-ayur-leaf/30 text-sm focus:outline-none focus:ring-2 focus:ring-ayur-emerald">
+                                <option value="Amravati (Rukhmini Nagar Chowk)">Amravati (Rukhmini Nagar Chowk)</option>
+                                <option value="Karanja Lad (Balaji Heights)">Karanja Lad (Balaji Heights)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-ayur-forest uppercase mb-1.5">Consultation Topic *</label>
+                            <select id="treatment-type" class="w-full px-4 py-3 rounded-xl bg-ayur-cream border border-ayur-leaf/30 text-sm focus:outline-none focus:ring-2 focus:ring-ayur-emerald">
+                                <option value="Hair Fall & Thinning Regrowth">Hair Fall & Thinning Regrowth</option>
+                                <option value="Severe Acne & Leech Therapy (Raktmokshan)">Severe Acne & Leech Therapy (Raktmokshan)</option>
+                                <option value="Pigmentation, Melasma & Mukhlepa">Pigmentation, Melasma & Mukhlepa</option>
+                                <option value="Chronic Skin Issue (Psoriasis / Eczema / Kushtha)">Chronic Skin Issue (Psoriasis / Eczema)</option>
+                                <option value="Stress, Insomnia & Padabhyang">Stress, Insomnia & Padabhyang</option>
+                                <option value="General Ayurvedic Consultation">General Ayurvedic Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-ayur-forest uppercase mb-1.5">Brief Symptoms or Notes (Optional)</label>
+                        <textarea id="patient-notes" rows="3" placeholder="Tell Dr. Sujata about the duration of your concern, previous treatments taken, etc." class="w-full px-4 py-3 rounded-xl bg-ayur-cream border border-ayur-leaf/30 text-sm focus:outline-none focus:ring-2 focus:ring-ayur-emerald"></textarea>
+                    </div>
+
+                    <div class="pt-2 text-center">
+                        <button type="submit" class="w-full sm:w-auto px-10 py-4 rounded-full bg-gradient-to-r from-ayur-forest to-ayur-emerald text-white font-bold text-sm shadow-xl hover:shadow-2xl hover:brightness-110 transition-all flex items-center justify-center gap-2 mx-auto">
+                            <span>Confirm & Book on WhatsApp</span>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.761.819 2.796.82h.005c3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.767-5.773-5.767zm7.329 5.766c-.001 4.04-3.288 7.327-7.33 7.327-1.229 0-2.433-.314-3.493-.911l-3.87 1.014 1.033-3.774c-.658-1.104-1.002-2.37-1.002-3.656.002-4.04 3.289-7.327 7.332-7.327 4.041.001 7.33 3.287 7.33 7.327z"/></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer with Official Logo -->
+    <footer class="bg-ayur-deep text-ayur-sand/80 py-12 border-t border-ayur-gold/20 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-white/10">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="h-12 w-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow">
+                            <img src="logo.png" alt="Vedadvaya Logo" class="h-full w-full object-contain">
+                        </div>
+                        <div>
+                            <div class="font-cinzel text-xl font-bold tracking-wider text-white">
+                                VEDADVAYA
+                            </div>
+                            <p class="text-ayur-gold text-[10px] uppercase tracking-wider font-semibold">Care For Every Layer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed text-[11px]">
+                        Authentic Ayurvedic clinical dermatology, trichology, and classical Leech Therapy by Dr. Sujata D Pawar.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider mb-3">Key Treatments</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#treatments" class="hover:text-ayur-gold transition-colors">Mukhlepa for Pigmentation</a></li>
+                        <li><a href="#treatments" class="hover:text-ayur-gold transition-colors">Raktmokshan for Acne & Hair Fall</a></li>
+                        <li><a href="#treatments" class="hover:text-ayur-gold transition-colors">Scalp Detox & Anti-Dandruff</a></li>
+                        <li><a href="#treatments" class="hover:text-ayur-gold transition-colors">Padabhyang Reflexology</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider mb-3">Clinics</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><strong>Amravati:</strong> Rukhmini Nagar Chowk, near Naike Xerox</li>
+                        <li><strong>Phone:</strong> +91 82638 84453</li>
+                        <li class="pt-2"><strong>Karanja (Lad):</strong> Balaji Heights, 1st Floor</li>
+                        <li><strong>Phone:</strong> +91 91586 76913</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-wider mb-3">Connect With Us</h4>
+                    <p class="text-gray-400 mb-3 text-[11px]">Follow our official Instagram for daily Ayurvedic wellness tips and treatment updates.</p>
+                    <a href="https://www.instagram.com/vedadvaya_clinic?psln=MWRsNTZ2aGNmdzhkYg==" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium transition-all">
+                        <svg class="w-4 h-4 fill-current text-pink-400" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span>@vedadvaya_clinic</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 text-center text-gray-500 text-[11px] flex flex-col sm:flex-row justify-between items-center gap-2">
+                <p>© 2026 Vedadvaya Ayurveda Hair & Skin Clinic. All Rights Reserved.</p>
+                <p>Designed with Ayurvedic Principles • Dr. Sujata D Pawar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Pill -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/918263884453?text=Namaste%20Dr.%20Sujata,%20I%20would%20like%20to%20inquire%20about%20a%20consultation%20at%20Vedadvaya%20Clinic." target="_blank" class="flex items-center gap-2.5 px-4 py-3 rounded-full bg-emerald-600 text-white font-semibold text-xs sm:text-sm shadow-2xl hover:bg-emerald-700 hover:scale-105 transition-all glow-gold">
+            <span class="w-2.5 h-2.5 rounded-full bg-white animate-ping"></span>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.761.819 2.796.82h.005c3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.767-5.773-5.767zm7.329 5.766c-.001 4.04-3.288 7.327-7.33 7.327-1.229 0-2.433-.314-3.493-.911l-3.87 1.014 1.033-3.774c-.658-1.104-1.002-2.37-1.002-3.656.002-4.04 3.289-7.327 7.332-7.327 4.041.001 7.33 3.287 7.33 7.327z"/></svg>
+            <span class="hidden sm:inline">Chat with Dr. Sujata</span>
+        </a>
+    </div>
+
+    <!-- JavaScript Interactivity -->
+    <script>
+        // Treatment Tab Switcher
+        function switchTab(tabName) {
+            const tabs = ['skin', 'hair', 'wellness'];
+            tabs.forEach(t => {
+                const content = document.getElementById('tab-content-' + t);
+                const btn = document.getElementById('tab-btn-' + t);
+                if (t === tabName) {
+                    content.classList.remove('hidden');
+                    btn.classList.add('bg-ayur-forest', 'text-white', 'shadow');
+                    btn.classList.remove('text-gray-600');
+                } else {
+                    content.classList.add('hidden');
+                    btn.classList.remove('bg-ayur-forest', 'text-white', 'shadow');
+                    btn.classList.add('text-gray-600');
+                }
+            });
+        }
+
+        // Quiz State
+        let quizState = { q1: null, q2: null };
+
+        function selectQuiz(questionNum, value) {
+            if (questionNum === 1) {
+                quizState.q1 = value;
+                document.querySelectorAll('.quiz-btn-1').forEach(btn => {
+                    btn.classList.remove('bg-ayur-gold', 'text-ayur-deep', 'border-ayur-gold');
+                    btn.querySelector('.indicator').classList.add('hidden');
+                });
+                const selected = document.getElementById('q1-' + value);
+                selected.classList.add('bg-ayur-gold', 'text-ayur-deep', 'border-ayur-gold');
+                selected.querySelector('.indicator').classList.remove('hidden');
+            } else if (questionNum === 2) {
+                quizState.q2 = value;
+                document.querySelectorAll('.quiz-btn-2').forEach(btn => {
+                    btn.classList.remove('bg-ayur-gold', 'text-ayur-deep', 'border-ayur-gold');
+                    btn.querySelector('.indicator').classList.add('hidden');
+                });
+                const selected = document.getElementById('q2-' + value);
+                selected.classList.add('bg-ayur-gold', 'text-ayur-deep', 'border-ayur-gold');
+                selected.querySelector('.indicator').classList.remove('hidden');
+            }
+
+            if (quizState.q1 && quizState.q2) {
+                renderQuizResult();
+            }
+        }
+
+        function renderQuizResult() {
+            const resultBox = document.getElementById('quiz-result');
+            const title = document.getElementById('result-title');
+            const desc = document.getElementById('result-desc');
+            const therapy = document.getElementById('result-therapy');
+            const waBtn = document.getElementById('result-wa-btn');
+
+            let diagnosis = "";
+            let explanation = "";
+            let recommendedTherapy = "";
+
+            if (quizState.q1 === 'hair') {
+                if (quizState.q2 === 'pitta') {
+                    diagnosis = "Aggravated Pitta-Rakta Scalp Heat";
+                    explanation = "Excessive internal heat and vitiated blood are burning follicle roots, leading to acute shedding.";
+                    recommendedTherapy = "Raktmokshan (Leech Therapy) + Pitta Shodhak Taila";
+                } else {
+                    diagnosis = "Vata-Kapha Root Depletion";
+                    explanation = "Dryness and micro-channel constriction are starving your hair follicles of essential nutrition.";
+                    recommendedTherapy = "Scalp Detox + Nasya & Shiro-Abhyanga";
+                }
+            } else if (quizState.q1 === 'acne') {
+                diagnosis = "Rakta-Dushit Pitta (Cystic Breakouts)";
+                explanation = "Toxins trapped in the Lohita micro-layer are causing recurring inflammatory cysts.";
+                recommendedTherapy = "Jalaukavacharana (Leech Therapy) + Blood Purifying Churnas";
+            } else {
+                diagnosis = "Avabhasini Layer Melanin Disruption (Twak Vaivarnya)";
+                explanation = "Superficial pigmentation and sun oxidation are masking your natural skin luminosity.";
+                recommendedTherapy = "Custom Mukhlepa Facial Polishing + Kumkumadi Taila";
+            }
+
+            title.innerText = diagnosis;
+            desc.innerText = explanation;
+            therapy.innerText = recommendedTherapy;
+
+            waBtn.href = "https://wa.me/918263884453?text=" + encodeURIComponent("Namaste Dr. Sujata, my Dosha Quiz showed " + diagnosis + " and I want to book " + recommendedTherapy + ".");
+
+            resultBox.classList.remove('hidden');
+        }
+
+        // Booking Form WhatsApp Dispatcher
+        function handleBooking(e) {
+            e.preventDefault();
+            const name = document.getElementById('patient-name').value;
+            const phone = document.getElementById('patient-phone').value;
+            const branch = document.getElementById('clinic-branch').value;
+            const treatment = document.getElementById('treatment-type').value;
+            const notes = document.getElementById('patient-notes').value;
+
+            const targetPhone = branch.includes('Amravati') ? '918263884453' : '919158676913';
+
+            const message = `Namaste Dr. Sujata Pawar,\nI want to book an appointment at Vedadvaya Clinic.\n\n*Patient Name:* ${name}\n*Phone:* ${phone}\n*Preferred Branch:* ${branch}\n*Concern:* ${treatment}\n*Notes:* ${notes || 'None'}\n\nPlease let me know available slots.`;
+
+            const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
